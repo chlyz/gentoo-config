@@ -4,3 +4,6 @@
 [submodule "vendor/ansible"]
 	path = vendor/ansible
 	url = https://github.com/ansible/ansible.git
+[submodule "vendor/git-cipher"]
+	path = vendor/git-cipher
+	url = https://github.com/wincent/git-cipher.git

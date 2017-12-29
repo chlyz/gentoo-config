@@ -1,0 +1,3 @@
+--pager=less -iFMRSX
+--sort-files
+--type-set=txt=.txt
