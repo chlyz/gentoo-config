@@ -25,3 +25,6 @@
 [submodule "roles/dotfiles/files/.vim/pack/bundle/start/scalpel"]
 	path = roles/dotfiles/files/.vim/pack/bundle/start/scalpel
 	url = https://github.com/wincent/scalpel.git
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/pinnacle"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/pinnacle
+	url = https://github.com/wincent/pinnacle.git
