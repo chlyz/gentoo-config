@@ -9,7 +9,7 @@ if &term =~# 'screen' || &term =~# 'tmux' || &term =~# 'xterm'
 endif
 
 let g:CommandTEncoding='UTF-8'
-let g:CommandTFileScanner='watchman'
+let g:CommandTFileScanner='git'
 let g:CommandTMaxCachedDirectories=10
 let g:CommandTMaxFiles=2000000
 let g:CommandTScanDotDirectories=1
@@ -20,6 +20,9 @@ let g:CommandTWildIgnore.=',*/.hg'
 let g:CommandTWildIgnore.=',*/bower_components'
 let g:CommandTWildIgnore.=',*/tmp'
 let g:CommandTWildIgnore.=',*/vendor'
+let g:CommandTWildIgnore.=',*.xlsx,*.xls,*.xsl,*.XSLX'
+let g:CommandTWildIgnore.=',*.png,*.gif,*.jpg'
+let g:CommandTWildIgnore.=',*.pyc'
 
 " Allow Command-T to open selections in netrw windows.
 let g:CommandTWindowFilter='!&buflisted && &buftype == "nofile" && !exists("w:netrw_liststyle")'
