@@ -26,7 +26,7 @@ dotfile_files:
   # - .screenrc
   # - .tmux.conf
   # - .urlview
-  # - .vim
+  - .vim
   # - .zsh
   # - .zshenv
   # - .zshrc

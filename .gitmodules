@@ -7,3 +7,21 @@
 [submodule "vendor/git-cipher"]
 	path = vendor/git-cipher
 	url = https://github.com/wincent/git-cipher.git
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/vim-sensible"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/vim-sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/vim-unimpaired"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/loupe"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/loupe
+	url = https://github.com/wincent/loupe.git
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/ferret"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/ferret
+	url = https://github.com/wincent/ferret.git
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/command-t"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/command-t
+	url = https://github.com/wincent/command-t.git
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/scalpel"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/scalpel
+	url = https://github.com/wincent/scalpel.git
