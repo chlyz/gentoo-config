@@ -53,18 +53,18 @@ endif
 
 set formatoptions+=n                  " smart auto-indenting inside numbered lists
 " set guifont=Source\ Code\ Pro\ Light:h13
-set guioptions-=T                     " don't show toolbar
-set hidden                            " allows you to hide buffers with unsaved changes without being prompted
+set guioptions-=T                   " don't show toolbar
+set hidden                          " allows you to hide buffers with unsaved changes without being prompted
 
 if !has('nvim')
     " Sync with corresponding nvim settings in ~/.vim/plugin/autocmds.vim:
-    set highlight+=@:ColorColumn        " ~/@ at end of window, 'showbreak'
-    set highlight+=N:DiffText           " make current line number stand out a little
-    set highlight+=c:LineNr             " blend vertical separators with line numbers
+    set highlight+=@:ColorColumn      " ~/@ at end of window, 'showbreak'
+    set highlight+=N:DiffText         " make current line number stand out a little
+    set highlight+=c:LineNr           " blend vertical separators with line numbers
 endif
 
 if exists('&inccommand')
-    set inccommand=split                " live preview of :s results
+    set inccommand=split              " live preview of :s results
 endif
 
 set laststatus=2                      " always show status line
@@ -85,7 +85,7 @@ set nojoinspaces                      " don't autoinsert two spaces after '.', '
 set number                            " show line numbers in gutter
 
 if exists('+relativenumber')
-    set relativenumber                  " show relative numbers in gutter
+    set relativenumber                " show relative numbers in gutter
 endif
 
 set scrolloff=3                       " start scrolling 3 lines before edge of viewport
@@ -101,47 +101,47 @@ set shiftwidth=4                      " spaces per tab (when shifting)
 " set shortmess+=t                      " truncate file messages at start
 
 if has('linebreak')
-    let &showbreak='↳ '                 " DOWNWARDS ARROW WITH TIP RIGHTWARDS (U+21B3, UTF-8: E2 86 B3)
+    let &showbreak='↳'                " DOWNWARDS ARROW WITH TIP RIGHTWARDS (U+21B3, UTF-8: E2 86 B3)
 endif
 
-" if has('showcmd')
-"   set noshowcmd                       " don't show extra info at end of command line
-" endif
+if has('showcmd')
+  set noshowcmd                       " don't show extra info at end of command line
+endif
 
 set sidescrolloff=3                   " same as scrolloff, but for columns set smarttab <tab>/<BS> indent/dedent in leading whitespace
 
 " if v:progname !=# 'vi'
-"   set softtabstop=-1                  " use 'shiftwidth' for tab/bs at end of line
+"   set softtabstop=-1                " use 'shiftwidth' for tab/bs at end of line
 " endif
 
 if has('syntax')
-    set spellcapcheck=                  " don't check for capital letters at start of sentence
+    set spellcapcheck=                " don't check for capital letters at start of sentence
 endif
 
 if has('windows')
-    set splitbelow                      " open horizontal splits below current window
+    set splitbelow                    " open horizontal splits below current window
 endif
 
 if has('vertsplit')
-    set splitright                      " open vertical splits to the right of the current window
+    set splitright                    " open vertical splits to the right of the current window
 endif
 
 if exists('&swapsync')
-    set swapsync=                       " let OS sync swapfiles lazily
+    set swapsync=                     " let OS sync swapfiles lazily
 endif
 set switchbuf=usetab                  " try to reuse windows/tabs when switching buffers
 
 if has('syntax')
-    set synmaxcol=200                   " don't bother syntax highlighting long lines
+    set synmaxcol=200                 " don't bother syntax highlighting long lines
 endif
 
 set tabstop=4                         " spaces per tab
 
-" if has('termguicolors')
-"   set termguicolors                   " use guifg/guibg instead of ctermfg/ctermbg in terminal
-" endif
+if has('termguicolors')
+  set termguicolors                   " use guifg/guibg instead of ctermfg/ctermbg in terminal
+endif
 
-set textwidth=120                      " automatically hard wrap at 80 columns
+set textwidth=120                     " automatically hard wrap at 80 columns
 
 if has('persistent_undo')
     if exists('$SUDO_USER')

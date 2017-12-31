@@ -27,9 +27,9 @@ dotfile_files:
   # - .tmux.conf
   # - .urlview
   - .vim
-  # - .zsh
+  - .zsh
   # - .zshenv
-  # - .zshrc
+  - .zshrc
 
 dotfile_templates:
   # - .corpusrc
